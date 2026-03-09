@@ -173,9 +173,9 @@ proyecto-pagina-inicio-html-css-avanzado/
 
 ### Fase 1: Preparación
 
-* [ ] crear la estructura base del proyecto
-* [ ] enlazar HTML y CSS
-* [ ] organizar carpetas de assets
+* [x] crear la estructura base del proyecto
+* [x] enlazar HTML y CSS
+* [x] organizar carpetas de assets
 * [ ] reunir imágenes, iconos y fuentes
 
 ### Fase 2: Maquetación base
