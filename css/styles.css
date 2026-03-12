@@ -3,7 +3,7 @@
   --font-heading: "Cormorant Garamond", serif;
   --font-body: "Roboto", "Segoe UI", Arial, sans-serif;
   --col-centro: min(135ch, 100%);
-  --shadow-box: 8px 8px 9px -8px rgba(0, 0, 0, 1);
+  --shadow-box: 0px 6px 7px -1px rgba(0, 0, 0, 0.41);
   --border-radius-light: 2px;
   --background-light: #fff;
 }
@@ -150,13 +150,13 @@ h3 {
 }
 
 .about-copy h2 {
-  font-size: 2rem;
+  font-size: 2.7rem;
   padding: 12px 0;
 }
 
 .about-copy p {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.9;
 }
 
 .about-social-list {
@@ -182,7 +182,79 @@ h3 {
     TABLET
 ========== */
 @media (min-width: 768px) and (max-width: 1023px) {
-  
+  .about-section {
+    min-height: 700px;
+    padding: 48px 32px 56px;
+  }
+
+  .about-section::before {
+    height: 520px;
+    clip-path: polygon(0 0, 100% 0, 100% 74%, 0 100%);
+  }
+
+  .about-inner {
+    max-width: 850px;
+    margin: 0 0 0 41px;
+  }
+
+  .about-card {
+    position: relative;
+    max-width: 769px;
+    min-height: 500px;
+    margin: 108px 0 0 0;
+    padding: 58px 38px 28px;
+    background: #f7f7f7;
+    box-shadow: var(--shadow-box);
+  }
+
+  .about-photo {
+    position: relative;
+    top: auto;
+    left: auto;
+    float: left;
+    width: 390px;
+    margin: -110px 22px 12px -52px;
+    
+  }
+
+  .about-photo img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transform: scaleY(1) scaleX(1) translateY(-20px) translateX(-20px);
+  }
+
+  .about-name {
+    position: absolute;
+    top: -84px;
+    left: 36%;
+    z-index: 3;
+    font-size: 4rem;
+    line-height: 0.95;
+    white-space: nowrap;
+  }
+
+  .about-copy h2 {
+    font-size: 2.7rem;
+    line-height: 1;
+    margin-bottom: 16px;
+    padding: 0;
+  }
+
+  .about-copy p {
+    font-size: 1rem;
+    line-height: 1.82;
+  }
+
+  .about-social {
+    clear: both;
+  }
+
+  .about-social-list {
+    justify-content: flex-end;
+    gap: 18px;
+    margin-top: 18px;
+  }
 }
 
 
