@@ -36,7 +36,7 @@ body>* {
 }
 
 #main-content {
-  border: 1px solid red;
+  border: 1px solid red; /* Solo para depuración, eliminar en producción */
 }
 
 h1,
@@ -167,15 +167,15 @@ h3 {
   margin-top: 30px;
 }
 .about-social a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 44px;
-    min-height: 44px;
-    font-size: 2rem;
-    color: #081722;
-    transition: transform 0.25s ease;
-  }
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 2rem;
+  color: #081722;
+  transition: transform 0.25s ease;
+}
 
 
 /* ==========
@@ -261,11 +261,91 @@ h3 {
 /* ==========
     CARD - MOBILE FIRST
 ========== */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  .about-section {
+    min-height: 100vh;
+    padding: 14px 0 32px;
+  }
 
-  
+  .about-section::before {
+    height: 442px;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  }
+
+  .about-inner {
+    max-width: 100%;
+    margin: 1rem;
+  }
+
+  .about-card {
+    position: relative;
+    max-width: 500px;
+    padding: 0 0 24px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .about-photo {
+    position: relative;
+    top: auto;
+    left: auto;
+    float: none;
+    transform: none;
+    box-shadow: var(--shadow-box);
+  }
+
+  .about-photo img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    transform: none;
+  }
+
+  .about-name {
+    position: relative;
+    width: 60%;
+    top: -147px;
+    left: 35%;
+    transform: translateX(-50%);
+    z-index: 3;
+    font-size: 4rem;
+    line-height: 0.85;
+    white-space: normal;
+  }
+  .about-copy {
+    margin-top: 8px;
+  }
+
+  .about-copy h2 {
+    font-size: 3rem;
+    line-height: 1;
+    margin: -80px 0 2rem 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-copy p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .about-social {
+    clear: none;
+  }
+
+  .about-social-list {
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .about-social a {
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.9rem;
+  }
 }
-
 
 /* Accesibilidad: reduce movimiento si el usuario lo pide */
 @media (prefers-reduced-motion: reduce) {
