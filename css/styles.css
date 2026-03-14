@@ -85,7 +85,8 @@ h3 {
   position: relative;
   overflow: hidden;
   min-height: 740px;
-  padding: 24px 16px 48px;
+  min-height: 645px;
+  padding: 52px 73px 90px;
   background: var(--background-light);
 }
 
@@ -105,10 +106,6 @@ h3 {
   margin: 0 auto;
 }
 
-.about-section {
-  min-height: 645px;
-  padding: 52px 32px 90px;
-}
 
 .about-section::before {
   height: 600px;
@@ -118,7 +115,7 @@ h3 {
     DESKTOP
 ========== */
 .about-card {
-  max-width: 1257px;
+  max-width: 100%;
   min-height: 367px;
   margin: 27px auto 0;
   padding: 0px 28px 0 423px;
@@ -177,19 +174,102 @@ h3 {
   transition: transform 0.25s ease;
 }
 
+/* ==========
+   MY WORK
+========== */
+.work-section {
+  padding: 2rem 73px 3.5rem;
+  background: var(--background-light);
+}
+
+.work-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.work-title {
+  margin-bottom: 0.75rem;
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(260px, 30%, 320px), 1fr));
+  gap: 2rem 1.5rem;
+}
+
+.work-card {
+  background: #fff;
+  box-shadow: var(--shadow-box);
+}
+
+.work-shot {
+  margin: 0;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.work-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+
+.work-body {
+  padding: 0.85rem 1rem 1rem;
+}
+
+.work-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.65rem;
+}
+
+.work-head h3 {
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.work-links {
+  display: flex;
+  gap: 0.2rem;
+  list-style: none;
+}
+
+.work-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  color: #111;
+}
+
+.work-body p {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: #555;
+}
+
 
 /* ==========
     TABLET
 ========== */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .about-section {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-section, .work-section {
     min-height: 700px;
     padding: 48px 32px 56px;
   }
 
   .about-section::before {
-    height: 520px;
-    clip-path: polygon(0 0, 100% 0, 100% 74%, 0 100%);
+    height: 617px;
   }
 
   .about-inner {
@@ -199,7 +279,7 @@ h3 {
 
   .about-card {
     position: relative;
-    max-width: 769px;
+    max-width: 100%;
     min-height: 500px;
     margin: 108px 0 0 0;
     padding: 58px 38px 28px;
@@ -255,13 +335,27 @@ h3 {
     gap: 18px;
     margin-top: 18px;
   }
+
+  .work-title {
+    font-size: 2.7rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(auto-fill, minmax(clamp(297px, 30%, 320px), 1fr));
+    gap: 2rem 1.5rem;
+  }
+
+  .work-shot {
+    font-size: 1.95rem;
+  }
 }
 
 
 /* ==========
     CARD - MOBILE FIRST
 ========== */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767.5px) {
   .about-section {
     min-height: 100vh;
     padding: 14px 0 32px;
@@ -344,6 +438,47 @@ h3 {
     min-width: 44px;
     min-height: 44px;
     font-size: 1.9rem;
+  }
+    .work-section {
+    padding: 1rem 0 2.5rem;
+  }
+
+  .work-container {
+    max-width: 500px;
+    padding: 0 0.75rem;
+  }
+
+  .work-title {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+  }
+
+  .work-shot {
+    font-size: 1.8rem;
+  }
+
+  .work-body {
+    padding: 0.7rem 0.8rem 0.9rem;
+  }
+
+  .work-head h3 {
+    font-size: 1.1rem;
+  }
+
+  .work-links a {
+    min-width: 32px;
+    min-height: 32px;
+    font-size: 0.95rem;
+  }
+
+  .work-body p {
+    font-size: 0.72rem;
+    line-height: 1.35;
   }
 }
 
