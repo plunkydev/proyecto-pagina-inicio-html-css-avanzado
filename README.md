@@ -29,7 +29,7 @@ Pendiente.
 
 Cuando el proyecto esté terminado, aquí agregaré:
 
-* **Live preview:** `PENDIENTE`
+* **Live preview:** `https://plunkydev.github.io/proyecto-pagina-inicio-html-css-avanzado/`
 * **Repositorio:** `https://github.com/plunkydev/proyecto-pagina-inicio-html-css-avanzado`
 
 ---
@@ -173,42 +173,42 @@ proyecto-pagina-inicio-html-css-avanzado/
 
 ### Fase 1: Preparación
 
-* [x] crear la estructura base del proyecto
-* [x] enlazar HTML y CSS
-* [x] organizar carpetas de assets
-* [ ] reunir imágenes, iconos y fuentes
+* [X] crear la estructura base del proyecto
+* [X] enlazar HTML y CSS
+* [X] organizar carpetas de assets
+* [X] reunir imágenes, iconos y fuentes
 
 ### Fase 2: Maquetación base
 
-* [ ] construir la estructura semántica en HTML
-* [ ] crear las secciones principales
-* [ ] ubicar bloques grandes del layout
+* [X] construir la estructura semántica en HTML
+* [X] crear las secciones principales
+* [X] ubicar bloques grandes del layout
 
 ### Fase 3: Estilos generales
 
-* [ ] definir tipografías
-* [ ] aplicar colores principales
-* [ ] trabajar espaciado, sombras y jerarquía visual
+* [X] definir tipografías
+* [X] aplicar colores principales
+* [X] trabajar espaciado, sombras y jerarquía visual
 
 ### Fase 4: Responsividad
 
-* [ ] adaptar diseño mobile
-* [ ] ajustar versión tablet
-* [ ] pulir desktop
-* [ ] revisar el comportamiento entre 320px y 1920px
+* [X] adaptar diseño mobile
+* [X] ajustar versión tablet
+* [X] pulir desktop
+* [X] revisar el comportamiento entre 320px y 1920px
 
 ### Fase 5: Accesibilidad y revisión
 
-* [ ] revisar semántica
-* [ ] mejorar textos alternativos
-* [ ] validar contraste y legibilidad
-* [ ] comprobar estados hover/focus
+* [X] revisar semántica
+* [X] mejorar textos alternativos
+* [X] validar contraste y legibilidad
+* [X] comprobar estados hover/focus
 
 ### Fase 6: Publicación
 
-* [ ] subir versión final a GitHub
-* [ ] publicar con GitHub Pages
-* [ ] agregar enlace demo al README
+* [X] subir versión final a GitHub
+* [X] publicar con GitHub Pages
+* [X] agregar enlace demo al README
 
 ---
 
@@ -265,15 +265,15 @@ Estos son algunos puntos importantes a resolver:
 
 Antes de dar el proyecto por terminado, debería cumplirse lo siguiente:
 
-* [ ] el HTML valida sin errores importantes
-* [ ] la página se ve bien en mobile, tablet y desktop
-* [ ] no hay scroll horizontal no deseado
-* [ ] las imágenes no se deforman
-* [ ] los enlaces funcionan correctamente
-* [ ] los iconos tienen propósito claro
-* [ ] la jerarquía de títulos es correcta
-* [ ] el contenido es legible en todos los tamaños
-* [ ] el código CSS está ordenado y es mantenible
+* [X] el HTML valida sin errores importantes
+* [X] la página se ve bien en mobile, tablet y desktop
+* [X] no hay scroll horizontal no deseado
+* [X] las imágenes no se deforman
+* [X] los enlaces funcionan correctamente
+* [X] los iconos tienen propósito claro
+* [X] la jerarquía de títulos es correcta
+* [X] el contenido es legible en todos los tamaños
+* [X] el código CSS está ordenado y es mantenible
 
 ---
 
