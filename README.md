@@ -29,7 +29,8 @@ Pendiente.
 
 Cuando el proyecto esté terminado, aquí agregaré:
 
-* **Live preview:** `https://plunkydev.github.io/proyecto-pagina-inicio-html-css-avanzado/`
+* **Live preview:** <a href="https://plunkydev.github.io/proyecto-pagina-inicio-html-css-avanzado/">https://plunkydev.github.io/proyecto-pagina-inicio-html-css-avanzado/</a>
+
 * **Repositorio:** `https://github.com/plunkydev/proyecto-pagina-inicio-html-css-avanzado`
 
 ---
@@ -319,20 +320,3 @@ Con este proyecto quiero reforzar especialmente:
 
 ---
 
-## Notas personales de implementación
-
-Espacio para documentar avances reales del desarrollo:
-
-### Día 1
-
-* Repositorio creado
-* README inicial preparado
-* análisis del diseño de referencia
-
-### Próximos pasos
-
-* montar estructura HTML semántica
-* definir clases base
-* crear layout del hero
-* construir tarjetas reutilizables de proyectos
-* preparar breakpoints principales
